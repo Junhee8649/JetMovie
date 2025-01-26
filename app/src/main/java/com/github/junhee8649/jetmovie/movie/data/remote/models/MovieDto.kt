@@ -1,4 +1,4 @@
-package com.github.junhee8649.jetmovie.movie.remote.models
+package com.github.junhee8649.jetmovie.movie.data.remote.models
 
 
 import kotlinx.serialization.SerialName
