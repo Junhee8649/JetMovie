@@ -94,6 +94,7 @@ dependencies {
     implementation(libs.okhttp)
     implementation(libs.logging.interceptor)
     implementation(libs.kotlinx.serialization.json)
+
     // Hilt (의존성 주입)
     implementation(libs.hilt.android.v2511)
     ksp(libs.hilt.android.compiler.v2511)
