@@ -12,7 +12,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.github.junhee8649.jetmovie.ui.theme.JetMovieTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+// Dagger Hilt에게 '이것은 실제로 Android 컴포넌트입니다'라고 알리는 역할
+// 의존성을 사용할 진입점을 알림
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
