@@ -22,6 +22,8 @@ class HomeViewModel @Inject constructor(
     private val _homeState = MutableStateFlow(HomeState())
     val homeState: StateFlow<HomeState> = _homeState.asStateFlow()
 
+    // 두 초기화 작업을 시각적으로 구분하기 위한 의도, 하나의 init 블록에 넣어도 됨
+
     init {
         fetchDiscoverMovie()
     }
@@ -68,6 +70,8 @@ class HomeViewModel @Inject constructor(
 
 }
 
+// isLoading 필드도 데이터 로딩 중일 때 로딩 인디케이터를 보여줄지 결정하며 error 필드는 오류 메시지를 표시하는 데 사용함
+// 둘 모두 데이터가 변함에 따라 UI 리컴포지션이 필요한 데이터임을 알 수 있음 그렇기에 UIState에 넣은 것
 data class HomeState(
     val discoverMovies: List<Movie> = emptyList(),
     val trendingMovies: List<Movie> = emptyList(),
