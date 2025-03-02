@@ -23,7 +23,6 @@ class HomeViewModel @Inject constructor(
     val homeState: StateFlow<HomeState> = _homeState.asStateFlow()
 
     // 두 초기화 작업을 시각적으로 구분하기 위한 의도, 하나의 init 블록에 넣어도 됨
-
     init {
         fetchDiscoverMovie()
     }

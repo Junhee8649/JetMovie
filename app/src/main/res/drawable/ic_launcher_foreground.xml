@@ -1,30 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endX="85.84757"
-                android:endY="92.4963"
-                android:startX="42.9492"
-                android:startY="49.59793"
-                android:type="linear">
-                <item
-                    android:color="#44000000"
-                    android:offset="0.0" />
-                <item
-                    android:color="#00000000"
-                    android:offset="1.0" />
-            </gradient>
-        </aapt:attr>
-    </path>
-    <path
-        android:fillColor="#FFFFFF"
-        android:fillType="nonZero"
-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000" />
+    <group
+        android:scaleX="0.33"
+        android:scaleY="0.33"
+        android:translateX="26.18"
+        android:translateY="36.18">
+
+        <!-- "JET" 텍스트 - 중앙 정렬 -->
+        <!-- J -->
+        <path
+            android:fillColor="#8ECFB4"
+            android:pathData="M25,30L49,30L49,36L43,36L43,54C43,56 42,58 40,59C38,60 36,60 34,60L27,60L27,54L32,54C33,54 34,54 34,53C35,53 35,52 35,51L35,36L27,36Z" />
+
+        <!-- E -->
+        <path
+            android:fillColor="#8ECFB4"
+            android:pathData="M54,30L78,30L78,36L61,36L61,42L76,42L76,48L61,48L61,54L78,54L78,60L54,60Z" />
+
+        <!-- T -->
+        <path
+            android:fillColor="#8ECFB4"
+            android:pathData="M83,30L108,30L108,36L99,36L99,60L92,60L92,36L83,36Z" />
+
+        <!-- "MOVIE" 텍스트 - 글자 간격 축소 -->
+        <!-- M -->
+        <path
+            android:fillColor="#8ECFB4"
+            android:pathData="M27,70L34,70L42,83L50,70L57,70L57,100L50,100L50,80L42,93L34,80L34,100L27,100Z" />
+
+        <!-- O - 더 둥근 원형으로 수정 -->
+        <path
+            android:fillColor="#8ECFB4"
+            android:pathData="M62,85C62,78 65,70 71,70C77,70 80,78 80,85C80,92 77,100 71,100C65,100 62,92 62,85Z" />
+
+        <!-- V - 위치 조정 -->
+        <path
+            android:fillColor="#8ECFB4"
+            android:pathData="M84,70L91,70L99,90L107,70L114,70L103,100L95,100Z" />
+
+        <!-- I - 위치 조정 -->
+        <path
+            android:fillColor="#8ECFB4"
+            android:pathData="M118,70L125,70L125,100L118,100Z" />
+
+        <!-- E - 위치 조정 -->
+        <path
+            android:fillColor="#8ECFB4"
+            android:pathData="M129,70L150,70L150,76L136,76L136,82L148,82L148,88L136,88L136,94L150,94L150,100L129,100Z" />
+    </group>
 </vector>
