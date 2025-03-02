@@ -113,7 +113,6 @@ fun HomeScreen(
                     trendingMovies = state.trendingMovies,
                     onMovieClick = onMovieClick
                 )
-
             }
         }
     }

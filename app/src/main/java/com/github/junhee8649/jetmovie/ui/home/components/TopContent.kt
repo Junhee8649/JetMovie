@@ -134,7 +134,7 @@ fun MovieDetail(
 }
 
 
-@Preview(showBackground = true)
+@Preview(showBackground = false)
 @Composable
 private fun PrevMovieDetail() {
     MovieDetail(
