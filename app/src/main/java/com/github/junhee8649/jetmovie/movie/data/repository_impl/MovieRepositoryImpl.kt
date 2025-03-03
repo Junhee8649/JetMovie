@@ -15,7 +15,7 @@ class MovieRepositoryImpl(
     private val apiMapper: ApiMapper<List<Movie>, MovieDto>
 ):MovieRepository {
     override fun fetchDiscoverMovie(): Flow<Response<List<Movie>>> = flow {
-        emit(Response.Loading)
+        emit(Response.Loading())
         val movieDto = movieApiService.fetchDiscoverMoive()
         apiMapper.mapToDomain(movieDto).apply {
             emit(Response.Success(this))
@@ -25,7 +25,7 @@ class MovieRepositoryImpl(
     }
 
     override fun fetchTrendingMovie(): Flow<Response<List<Movie>>> = flow {
-        emit(Response.Loading)
+        emit(Response.Loading())
         val movieDto = movieApiService.fetchTrendingMoive()
         apiMapper.mapToDomain(movieDto).apply {
             emit(Response.Success(this))
