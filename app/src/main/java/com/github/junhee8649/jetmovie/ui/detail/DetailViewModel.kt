@@ -19,6 +19,10 @@ import javax.inject.Inject
 @HiltViewModel
 class DetailViewModel @Inject constructor(
     private val repository: MovieDetailRepository,
+    // Hilt와 Compose Navigation을 함께 사용할 때 매우 유용
+    // 화면 회전이나 프로세스 종료와 같은 상황에서도 데이터를 유지할 수 있게 해줌
+    // Compose Navigation에서 전달된 인자(예: 영화 ID)를 ViewModel 내에서 쉽게 접근할 수 있게 해줌
+    // Hilt를 사용할 때 SavedStateHandle을 ViewModel 생성자에 자동으로 주입해줌
     savedStateHandle: SavedStateHandle
 ) : ViewModel() {
     private val _detailState = MutableStateFlow(DetailState())
@@ -29,6 +33,8 @@ class DetailViewModel @Inject constructor(
     init {
         fetchMovieDetailById()
     }
+
+    // 데이터 계층에서 구현해놨으니 오직 도메인 계층에서 선언한 인터페이스만 사용하고 생각하면 됌
 
     private fun fetchMovieDetailById() = viewModelScope.launch {
         if (id == -1) {
