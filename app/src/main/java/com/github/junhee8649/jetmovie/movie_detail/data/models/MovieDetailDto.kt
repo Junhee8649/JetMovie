@@ -45,7 +45,7 @@ data class MovieDetailDto(
     @SerialName("revenue")
     val revenue: Int? = null,
     @SerialName("reviews")
-    val reviews: Reviews? = null,
+    val reviews: ReviewsDto? = null,
     @SerialName("runtime")
     val runtime: Int? = null,
     @SerialName("spoken_languages")

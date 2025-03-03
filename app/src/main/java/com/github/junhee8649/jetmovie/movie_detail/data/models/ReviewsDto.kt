@@ -5,7 +5,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Reviews(
+data class ReviewsDto(
     @SerialName("page")
     val page: Int? = null,
     @SerialName("results")
