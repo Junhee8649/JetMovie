@@ -1,8 +1,8 @@
 package com.github.junhee8649.jetmovie.movie_detail.data.mapper_impl
 
 import com.github.junhee8649.jetmovie.common.data.ApiMapper
-import com.github.junhee8649.jetmovie.movie_detail.data.models.CastDto
-import com.github.junhee8649.jetmovie.movie_detail.data.models.MovieDetailDto
+import com.github.junhee8649.jetmovie.movie_detail.data.remote.models.CastDto
+import com.github.junhee8649.jetmovie.movie_detail.data.remote.models.MovieDetailDto
 import com.github.junhee8649.jetmovie.movie_detail.domain.models.Cast
 import com.github.junhee8649.jetmovie.movie_detail.domain.models.MovieDetail
 import com.github.junhee8649.jetmovie.movie_detail.domain.models.Review
