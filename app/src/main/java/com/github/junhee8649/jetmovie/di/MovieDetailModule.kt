@@ -32,6 +32,8 @@ object MovieDetailModule {
 
     @Provides
     @Singleton
+    // MovieApiService와 MovieMapper, MovieDetailMapper 세 가지 의존성을 주입하기 위해서
+    // MovieRepository를 반환하고 MovieRepositoryImpl로 초기화
     fun provideMovieDetailRepository(
         movieDetailApiService: MovieDetailApiService,
         mapper: ApiMapper<MovieDetail, MovieDetailDto>,
@@ -42,10 +44,12 @@ object MovieDetailModule {
         apiMovieMapper = movieMapper,
     )
 
+    // provideMovieMapper()를 통해 ApiMapper<MovieDetail, MovieDetailDto> 타입의 의존성을 제공
     @Provides
     @Singleton
     fun provideMovieMapper(): ApiMapper<MovieDetail, MovieDetailDto> = MovieDetailMapperImpl()
 
+    // provideMovieDetailApiService()를 통해 MovieDetailApiService 타입의 의존성을 제공
     @Provides
     @Singleton
     fun provideMovieDetailApiService(): MovieDetailApiService {
